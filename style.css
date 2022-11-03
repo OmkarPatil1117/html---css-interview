@@ -126,3 +126,21 @@ button {
         transform: translateX(1000px);
     }
 }
+
+header {
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr 1fr 1fr;
+    column-gap: 1rem;
+}
+#id1 {
+    grid-column: 2 / 3;
+}
+#id2 {
+    grid-column: 3 / 4;
+}
+#id3 {
+    grid-column: 4 / 5;
+}
+#id4 {
+    grid-column: 5 / 6;
+}
