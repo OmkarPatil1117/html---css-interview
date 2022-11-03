@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS INTERVIEW Qs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- different between div and span?  -->
+<!-- In html, the majar differene between div and span is basically div is block level element and span is inline element  -->
+<!-- for example -->
+<span>Hello</span>
+<div>Hello</div>
+<!-- in the output you can see that div is automatically coming in next line without any br tag and or any other additionaal css property, so you clearly see that div is taking some by default width, so we can say that div is block level element & span is not taking any by default property so span is inline element -->
+
+<!-- different between class and id ?  -->
+<!-- in html, basically we can give same class to multiple element but we can't give same id to multiple div, because later it will affect while doing dom manupulation. it not goos practice also.  -->
+
+<!-- what are self closing tags -->
+<br> <hr>
+<!-- In html. basically self closing tags are hr br  -->
+
+<!-- how many types of heading are there -->
+<!-- basically there are 6 types of heading -->
+<h1></h1>
+<h2></h2>
+<h3></h3>
+<h4></h4>
+<h5></h5>
+<h6></h6>
+
+<!-- what is defference between block and inline -->
+<!-- In html, the majar differene between div and span is basically div is block level element and span is inline element  -->
+<!-- for example -->
+<span>Hello</span>
+<div>Hello</div>
+<!-- in the output you can see that div is automatically coming in next line without any br tag and or any other additionaal css property, so you clearly see that div is taking some by default width, so we can say that div is block level element & span is not taking any by default property so span is inline element --> <br>
+
+<!-- defference between em and string ?  -->
+<em>Hello</em>
+<strong>Hello</strong>
+<!-- in html, em is tag is used to change the style to italik, and strong is upgraded version od bold tag, the reason behind the making bold tag to strong to make help in seo optimazition. -->
+
+<!-- what are attributes?  -->
+<img src="" alt="">
+<!--In html, in the above tag is "src" is attribute and "alt" is also a attribute  -->
+
+<!-- HTML DAY 2  --> <hr>
+
+<!-- defference between html tag and element  -->
+<h1></h1>
+<!-- this is the tag    -->
+<h1>Hello</h1>
+<!-- this is the element basically -->
+
+<!-- Explain br tag  -->
+<!-- in html, basically br tag is just to give brake, it just tels browser to come in next line -->
+<!-- for example -->
+<p>Lorem ipsum dolor sit amet. <br> Lorem ipsum dolor sit amet.</p>
+<!-- you can clearly see that after br tag it just coming in next line -->
+
+<!-- Explain how many defferent types of list are there in html  -->
+<!-- in Html, basically we have three types of list
+ordered list
+unordered list
+description list -->
+<ol>
+    <li>name</li>
+    <li>si rname</li>
+    <li>midle name</li>
+</ol>
+<ul>
+    <li>name</li>
+    <li>si rname</li>
+    <li>midle name</li>
+</ul>
+<dl>
+    <dt>Hello</dt>
+    <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, laudantium.</dd>
+</dl>
+
+
+<!-- what are semtics tag -->
+<!-- in html, basically sement tags are header nav section aside these are tags are knows as sementic tags -->
+<!-- sement tags dont have any functinality but there were help us understang web structure for developer also and browser also  -->
+
+<!-- write a code to create an orderes list with roman numbers -->
+<ol type="I">
+    <li>name</li>
+    <li>si rname</li>
+    <li>midle name</li>
+</ol>
+
+<!-- write a code to create unordered list with circle -->
+<ul type="circle" >
+    <li>name</li>
+    <li>si rname</li>
+    <li>midle name</li>
+</ul>
+
+<!-- write a code crete link to prepbytes  ?  -->
+<a href="https://www.prepbytes.com/" target="_blank">prepbytes</a> <br>
+
+<!-- HTML DAY 3 -->
+
+<!-- write a code insert an image -->
+<img src="./img/img1.jfif" alt="img">
+
+<!-- create a form contains input field like name age email and contact -->
+<form action="">
+    <label for="name">Name</label>
+    <input type="text" name="name" id="name"> <br>
+    <label for="age">Age</label>
+    <input type="number" name="age" id="age"> <br>
+    <label for="email">EMAIL</label>
+    <input type="email" name="email" id="email"> <br>
+    <label for="conatct">CONTACT</label>
+    <input type="tel" name="contact" id="contact"> <br>
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- create table and Explain colspan -->
+<table border="1">
+    <tr>
+        <th >Name</th>
+        <th colspan="2">Subject</th>
+    </tr>
+    <tr>
+        <td>Guru</td>
+        <td>Maths</td>
+        <td>Science</td>
+    </tr>
+</table>
+
+<!-- create a radio button (MERN, MEAN:COURSE) and checkbox(HTML, CSS, REACT, NODE: TECHNOLOGY) and explain the defference between these two -->
+MERN
+<input type="radio" name="COURSE" id="mern"> <br>
+MEAN
+<input type="radio" name="COURSE" id="mean"> <br>
+<br>
+HTML <input type="checkbox" name="TECHNOLOGY" id="html"> <br>
+CSS <input type="checkbox" name="TECHNOLOGY" id="css"> <br>
+REACT <input type="checkbox" name="TECHNOLOGY" id="react"> <br> 
+NODE<input type="checkbox" name="TECHNOLOGY" id="node"> <br>
+<!-- Checkboxes and radio buttons are elements for making selections. Checkboxes allow the user to choose items from a fixed number of alternatives, while radio buttons allow the user to choose exactly one item from a list of several predefined alternatives -->
+
+
+<!-- CSS DAY 1 -->
+
+<!-- Difference between flex row and column -->
+<div class="flex-deirection">
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+</div>
+<!-- in css, flex row is basically telling vrpwser that which direction should box move after adding more items -->
+<!-- for example : -  -->
+<!-- .flex-deirection {
+    display: flex;
+    flex-direction: row;
+} -->
+<div class="flex-deirection-col">
+    <div class="flexcol1"></div>
+    <div class="flexcol1"></div>
+    <div class="flexcol1"></div>
+    <div class="flexcol1"></div>
+</div>
+<hr>
+<!-- example :  -->
+<!-- .flex-deirection-col {
+    display: flex;
+    flex-direction: column;
+} -->
+
+
+<!-- Explain inline , internal and external stylesheet -->
+<!-- in css, inline , internal and external stylesheet is nothing but linking the stylesheet we can give styling while inline and internal and external and inline css have high priority -->
+
+<!-- Justify-content allows you to do what? -->
+<!-- in css, justify content helps use make proper spacing betwwenn div, there some values come with justify content like space around, center, flex end, space between in justify content -->
+<div class="justify">
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+    <div class="flexrow1"></div>
+</div>
+<!-- example : 
+.justify {
+    display: flex;
+    justify-content: space-around;
+} --> <hr>
+
+<!-- Difference between absolute and relative positioning ?  -->
+<!-- in css, position relative is from which div we taking as relative basically, so that our absulute will take as base for positining  -->
+<!-- for example : -->
+<div class="pos">
+    <div class="position" id="position1"></div>
+    <div class="position" id="position2"></div>
+</div>
+<!-- .pos {
+    position: relative;
+}
+.position {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+#position2 {
+    background-color: yellow;
+    position: absolute;
+    bottom: 2rem;
+} -->
+<!-- you can see in the above code that, .pos taking as tge relative from that base it will moving from top  2rme; -->
+
+
+<!-- What is grid-template-columns used for? -->
+<!-- in css, basically grid template colum is used for diciding how many colum we require in the div -->
+
+<!-- what is z index -->
+<!-- in css, z-index is property that i used to determine the stack level of the element, elements having the higher z-index value will be plced top of thr elemnt having lower index index value, it takes negative or positive values.
+z index will only work on elemnt which have either abuslute or relutive;  -->
+
+<!-- What is the difference between padding and margin? -->
+<!-- in css, basically padding is the space inside the border is known as padding and and the space outside the border is known as margin and padding does not take negative value but margin takes negative value, -->
+
+<!-- what is box sizing -->
+<!-- in css, box sizing: content box, it will actual width : width + border + padding -->
+<!-- box sizing:border box  -->
+
+
+<!-- what is aniamtion delay -->
+<!-- in css, animation delay is nothing but, it will stop animithis some specic time -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
