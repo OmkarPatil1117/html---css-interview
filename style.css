@@ -90,3 +90,39 @@ button {
     border-radius: 50%;
     background-color: cornflowerblue;
 }
+.media {
+    display: flex;
+}
+.media1 {
+    background-color: yellow;
+    width: 100%;
+    margin: 1rem;
+    height: 5rem;
+}
+@media screen and (max-width:600px) {
+    .media {
+        display: block;
+    }
+}
+
+.anime {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    background-color: yellow;
+}
+.anime:hover {
+    animation-name: move;
+    animation-duration: 4s;
+}
+@keyframes move {
+    0% {
+        background-color: red;
+    }
+    50% {
+        transform: translateX(500px);
+    }
+    100% {
+        transform: translateX(1000px);
+    }
+}
